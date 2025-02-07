@@ -108,13 +108,15 @@ export default function Post({ post, reloadPosts, showAvatar }) {
           <TouchableOpacity
             style={styles.imageWrapper}
             // onPress={() => openImageModal(post.scanImage)}
-            onPress={() => openImageModal(decodeURIComponent(post.scanImage))}
+            // onPress={() => openImageModal(decodeURIComponent(post.scanImage))}
+            onPress={() => openImageModal(post.scanImage)}
           >
             <Image
               style={styles.image}
               source={{
                 // uri: decodedUri,
-                uri: decodeURIComponent(post.scanImage),
+                // uri: decodeURIComponent(post.scanImage),
+                uri: post.scanImage,
                 // uri: post.scanImage,
               }}
             />

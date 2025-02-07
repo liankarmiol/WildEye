@@ -159,8 +159,9 @@ export default function PostModal() {
     const apiKey =
       "f3fe9c578687849a4b80a3d9535202f0f693153f8ba7517e2f58f6b3607ee26f";
     const engine = "google_lens";
+    console.log("***IMAGE-URL: ", imageUrl);
     imageUrl = encodeURIComponent(imageUrl);
-    imageUrl = encodeURIComponent(imageUrl);
+    // imageUrl = encodeURIComponent(imageUrl);
 
     const url = `https://serpapi.com/search?api_key=${apiKey}&engine=${engine}&url=${imageUrl}`;
 
